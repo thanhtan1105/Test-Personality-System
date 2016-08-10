@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+  <customer>
+    <address>123 ABC Street, South Korea</address>
+    <city>HCM</city>
+    <customerId>1</customerId>
+    <name>LTT</name>
+    <phone>123123123</phone>
+  </customer>
+  <customer>
+    <address>456 DFG Street, North Korea</address>
+    <city>HN</city>
+    <customerId>10</customerId>
+    <name>Kieu Trong Khanh</name>
+    <phone>1231312 123 123</phone>
+  </customer>
+</customers>

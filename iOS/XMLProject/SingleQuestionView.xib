@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="XMLProject" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SingleQuestionView" customModule="XMLProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hry-mB-Gam">
+                    <rect key="frame" x="141" y="20" width="39" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="In a party do you prefer to be the center of attraction or at the corner chilling ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc9-g3-TT1">
+                    <rect key="frame" x="20" y="54" width="280" height="434"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="cs6-XM-eSy">
+                    <rect key="frame" x="20" y="498" width="280" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3C-gh-rNc">
+                            <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="x3C-gh-rNc" secondAttribute="height" multiplier="1:1" id="vj7-SU-UTB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChoiceAnswearTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ud8-N1-9Nm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsU-qZ-AqC">
+                            <rect key="frame" x="58" y="0.0" width="50" height="51"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChoiceAnswearTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="pkn-U9-TvZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNr-QL-ZNN">
+                            <rect key="frame" x="115" y="0.0" width="50" height="51"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChoiceAnswearTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="PTJ-8A-m15"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS9-2J-JDw">
+                            <rect key="frame" x="172" y="0.0" width="51" height="51"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <state key="normal" title="4">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChoiceAnswearTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="C7C-RT-qSd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0M-B7-RdY">
+                            <rect key="frame" x="230" y="0.0" width="50" height="51"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <state key="normal" title="5">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChoiceAnswearTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Duj-Yl-bcZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="72s-id-Pin"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="72s-id-Pin"/>
+                        </mask>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cs6-XM-eSy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="1ez-qL-Hvc"/>
+                <constraint firstItem="Dc9-g3-TT1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="6TO-cw-2QY"/>
+                <constraint firstAttribute="trailing" secondItem="Dc9-g3-TT1" secondAttribute="trailing" constant="20" id="877-8a-SjI"/>
+                <constraint firstItem="Dc9-g3-TT1" firstAttribute="top" secondItem="hry-mB-Gam" secondAttribute="bottom" constant="10" id="DUf-3l-aEl"/>
+                <constraint firstItem="hry-mB-Gam" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="FxJ-s1-olj"/>
+                <constraint firstAttribute="trailing" secondItem="cs6-XM-eSy" secondAttribute="trailing" constant="20" id="VmT-3W-8T7"/>
+                <constraint firstAttribute="bottom" secondItem="cs6-XM-eSy" secondAttribute="bottom" constant="20" id="cgY-ej-ONn"/>
+                <constraint firstItem="cs6-XM-eSy" firstAttribute="top" secondItem="Dc9-g3-TT1" secondAttribute="bottom" constant="10" id="jmo-rd-mzQ"/>
+                <constraint firstItem="hry-mB-Gam" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oa0-XQ-xdH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="choice1Button" destination="x3C-gh-rNc" id="JC4-Nn-wfG"/>
+                <outlet property="choice2Button" destination="IsU-qZ-AqC" id="ZAj-k4-pga"/>
+                <outlet property="choice3Button" destination="SNr-QL-ZNN" id="hu0-xX-XpJ"/>
+                <outlet property="choice4Button" destination="lS9-2J-JDw" id="nmQ-3O-5Y0"/>
+                <outlet property="choice5Button" destination="Q0M-B7-RdY" id="0KA-j3-pj8"/>
+                <outlet property="currentPositionQuestionLabel" destination="hry-mB-Gam" id="D3z-tT-8gr"/>
+                <outlet property="detailQuestionLabel" destination="Dc9-g3-TT1" id="EPY-Jc-49L"/>
+            </connections>
+            <point key="canvasLocation" x="294.5" y="287"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost:8080/XMLProject/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login</title>
+
+        <style>
+            .error {
+                color: red;
+            }
+
+            .form-group{
+                padding: 6px;
+            }
+
+            .beautifyInput{
+                display: block;
+                width: 100%;
+                height: 20px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .button{
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;                
+                touch-action: manipulation;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+            }
+            .div-content{
+                margin-top: 30px;
+                padding-top: 5%;
+                padding-bottom:  1%;
+                width: 30%;
+                background-color:#fff;
+            }
+            body{
+                background-color: #DFDCE0;
+            }
+            a:link {
+                color:#1C95E8;
+                text-decoration: none;
+            }
+
+            /* visited link */
+            a:visited {
+                color: blue;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: #1CBAE8;
+            }
+
+            /* selected link */
+            a:active {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body >
+    <center>
+        <img src="/XMLProject/image/logo.png" width="20%" style="margin-top:5%"/>
+        <div class="div-content">      
+            <form action="http://localhost:8080/XMLProject/ProcessServlet" method="POST" onsubmit="return onClickButtonSubmit(this)">  
+                <div class="form-group">                 
+                    <input id="txtUsername" type="text" name="txtUsername" placeholder="Username" style="width: 80%;" class="beautifyInput"> 
+                </div> 
+                <div class="form-group">
+                    <input id="txtPassword" type="password" placeholder="Password" name="txtPassword" style="width:80%;" class="beautifyInput">
+                </div>
+                <input type="submit" name="btAction" value="Login" class="button" style="background-color: #562b36;color:#fff;margin-top:5%;width:80%"> <br>
+            </form>
+            <br/>
+            <div style="width:80%;text-align:right">
+                <a href="http://localhost:8080/XMLProject/CreateNewAccountJSP.jsp" class="create">
+                    Create New Account
+                </a> 
+            </div>
+
+            <h4 id="error"></h4>
+
+        </div></center>
+    <script>
+        function onClickButtonSubmit() {
+            var result;
+            var txtPassword = document.getElementById("txtPassword");
+            var txtUsername = document.getElementById("txtUsername");
+
+            if (txtUsername.length < 4) {
+                result = "Password must be larger than 4 character";
+                document.getElementById("error").innerHTML = result;
+                return false;
+            }
+
+            if (txtPassword.length < 6) {
+                result = "Password must be larger than 6 character";
+                document.getElementById("error").innerHTML = result;
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+
+
+</body></html>

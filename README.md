@@ -6,6 +6,10 @@ User story
 - [x] User login, create new account
 - [x] User can make test and server will response user's personality
 - [x] User can post question for their personality
+- [x] Mobile can get personality 
+- [x] Mobile can make test 
 
-
+## Web layout
 [![Web layout](http://img.youtube.com/vi/YfL76iLADrQ/0.jpg)](https://youtu.be/YfL76iLADrQ "XMLProjectWeb ")
+
+## Mobile layout

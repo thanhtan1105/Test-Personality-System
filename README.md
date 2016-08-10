@@ -13,3 +13,4 @@ User story
 [![Web layout](http://img.youtube.com/vi/YfL76iLADrQ/0.jpg)](https://youtu.be/YfL76iLADrQ "XMLProjectWeb ")
 
 ## Mobile layout
+[![Mobile layout](https://github.com/thanhtan1105/Test-Personality-System/blob/master/ReplicatingiOS.gif)]
